@@ -1,4 +1,8 @@
-Pegasus Test
+Had to run:
+1. `bundle install`
+2. `bundle exec rails webpacker:install`
+
+After cloning into a new repo.
 
 # Ruby on Rails stack with Webpack, React, PG Database
 
