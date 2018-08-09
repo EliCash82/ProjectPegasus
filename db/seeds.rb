@@ -4,4 +4,6 @@
 # Examples:
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+#   Character.create(name: 'Luke', movie: movies.
+
+cartoons = Cartoon.create([{title: 'Kissyfur', releaseyear: 1986, country: 'America', network: 'NBC', studio: 'DIC', endyear: 1990, summary: 'Adventures of a father bear and his cub living in a swamp', image: 'kissyfur.png'},{title: 'Muppet Babies', releaseyear: 1984, country: 'America', network: 'CBS', studio: 'The Jim Henson Company and Marvel Productions', endyear: 1991, summary: 'Jim Hensons Muppets as babies having imaginary adventures in their nursery', image: 'muppetbabies.png'}])

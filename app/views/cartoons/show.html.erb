@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @cartoon.title %>
+</p>
+
+<p>
+  <strong>Releaseyear:</strong>
+  <%= @cartoon.releaseyear %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @cartoon.country %>
+</p>
+
+<p>
+  <strong>Network:</strong>
+  <%= @cartoon.network %>
+</p>
+
+<p>
+  <strong>Studio:</strong>
+  <%= @cartoon.studio %>
+</p>
+
+<p>
+  <strong>Endyear:</strong>
+  <%= @cartoon.endyear %>
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @cartoon.summary %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @cartoon.image %>
+</p>
+
+<%= link_to 'Edit', edit_cartoon_path(@cartoon) %> |
+<%= link_to 'Back', cartoons_path %>

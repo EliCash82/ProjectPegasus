@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cartoons</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Releaseyear</th>
+      <th>Country</th>
+      <th>Network</th>
+      <th>Studio</th>
+      <th>Endyear</th>
+      <th>Summary</th>
+      <th>Image</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cartoons.each do |cartoon| %>
+      <tr>
+        <td><%= cartoon.title %></td>
+        <td><%= cartoon.releaseyear %></td>
+        <td><%= cartoon.country %></td>
+        <td><%= cartoon.network %></td>
+        <td><%= cartoon.studio %></td>
+        <td><%= cartoon.endyear %></td>
+        <td><%= cartoon.summary %></td>
+        <td><%= cartoon.image %></td>
+        <td><%= link_to 'Show', cartoon %></td>
+        <td><%= link_to 'Edit', edit_cartoon_path(cartoon) %></td>
+        <td><%= link_to 'Destroy', cartoon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cartoon', new_cartoon_path %>

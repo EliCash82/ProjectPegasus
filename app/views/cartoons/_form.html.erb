@@ -1,0 +1,57 @@
+<%= form_with(model: cartoon, local: true) do |form| %>
+  <% if cartoon.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cartoon.errors.count, "error") %> prohibited this cartoon from being saved:</h2>
+
+      <ul>
+      <% cartoon.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :releaseyear %>
+    <%= form.number_field :releaseyear %>
+  </div>
+
+  <div class="field">
+    <%= form.label :country %>
+    <%= form.text_field :country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :network %>
+    <%= form.text_field :network %>
+  </div>
+
+  <div class="field">
+    <%= form.label :studio %>
+    <%= form.text_field :studio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :endyear %>
+    <%= form.number_field :endyear %>
+  </div>
+
+  <div class="field">
+    <%= form.label :summary %>
+    <%= form.text_area :summary %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.text_field :image %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
